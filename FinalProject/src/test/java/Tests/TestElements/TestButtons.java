@@ -31,6 +31,7 @@ public class TestButtons extends TestSetup {
         dugmad.desniKlik();
         String porukaDesnogKlika = driver.findElement(By.id("rightClickMessage")).getText();
         assertEquals(porukaDesnogKlika, "You have done a right click", "Not a right click");
+        System.out.println();
     }
 
     @Test
