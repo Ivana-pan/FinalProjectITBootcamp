@@ -1,0 +1,16 @@
+<suite name="Suite1" verbose="1" >
+    <test name="Elements" >
+        <classes>
+            <class name="Tests.TestElements.TestButtons" />
+            <class name="Tests.TestElements.TestCheckbox" />
+            <class name="Tests.TestElements.TestTextBox" />
+            <class name="Tests.TestElements.TestWebTables" />
+        </classes>
+    </test>
+
+    <test name="Interactions">
+        <classes>
+            <class name="Tests.TestInteractions.TestDrag"/>
+        </classes>
+    </test>
+</suite>

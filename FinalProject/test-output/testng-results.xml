@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="13" passed="13">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="24788" started-at="2022-02-03T00:56:07 CET" finished-at="2022-02-03T00:56:32 CET">
+    <groups>
+    </groups>
+    <test name="Elements" duration-ms="20877" started-at="2022-02-03T00:56:07 CET" finished-at="2022-02-03T00:56:28 CET">
+      <class name="Tests.TestElements.TestButtons">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.TestElements.TestButtons@26aa12dd]" name="setUp" is-config="true" duration-ms="2162" started-at="2022-02-03T00:56:07 CET" finished-at="2022-02-03T00:56:10 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="kliktalicaDesna()[pri:0, instance:Tests.TestElements.TestButtons@26aa12dd]" name="kliktalicaDesna" duration-ms="1055" started-at="2022-02-03T00:56:10 CET" finished-at="2022-02-03T00:56:11 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- kliktalicaDesna -->
+        <test-method status="PASS" signature="kliktalicaDupla()[pri:0, instance:Tests.TestElements.TestButtons@26aa12dd]" name="kliktalicaDupla" duration-ms="538" started-at="2022-02-03T00:56:11 CET" finished-at="2022-02-03T00:56:11 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- kliktalicaDupla -->
+        <test-method status="PASS" signature="kliktalicaLeva()[pri:0, instance:Tests.TestElements.TestButtons@26aa12dd]" name="kliktalicaLeva" duration-ms="360" started-at="2022-02-03T00:56:11 CET" finished-at="2022-02-03T00:56:12 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- kliktalicaLeva -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.TestElements.TestButtons@26aa12dd]" name="tearDown" is-config="true" duration-ms="666" started-at="2022-02-03T00:56:12 CET" finished-at="2022-02-03T00:56:12 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.TestElements.TestButtons -->
+      <class name="Tests.TestElements.TestTextBox">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.TestElements.TestTextBox@4e7dc304]" name="setUp" is-config="true" duration-ms="1153" started-at="2022-02-03T00:56:15 CET" finished-at="2022-02-03T00:56:16 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="enterPersonalInfoHappyPath(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.TestElements.TestTextBox@4e7dc304]" name="enterPersonalInfoHappyPath" duration-ms="1388" started-at="2022-02-03T00:56:16 CET" data-provider="ubacivacImenaPrezimenaImaila" finished-at="2022-02-03T00:56:18 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lucius Daniel]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bryant.reinger@yahoo.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[6714 Lino Crossing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterPersonalInfoHappyPath -->
+        <test-method status="PASS" signature="enterPersonalInfoHappyPath(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.TestElements.TestTextBox@4e7dc304]" name="enterPersonalInfoHappyPath" duration-ms="877" started-at="2022-02-03T00:56:18 CET" data-provider="ubacivacImenaPrezimenaImaila" finished-at="2022-02-03T00:56:19 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Miss Rogelio Terry]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gilbert.turcotte@yahoo.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[812 Wallace Land]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterPersonalInfoHappyPath -->
+        <test-method status="PASS" signature="enterPersonalInfoHappyPath(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.TestElements.TestTextBox@4e7dc304]" name="enterPersonalInfoHappyPath" duration-ms="734" started-at="2022-02-03T00:56:19 CET" data-provider="ubacivacImenaPrezimenaImaila" finished-at="2022-02-03T00:56:19 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jed O'Kon]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[buford.anderson@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1554 Mann Flats]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterPersonalInfoHappyPath -->
+        <test-method status="PASS" signature="enterPersonalInfoHappyPath(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.TestElements.TestTextBox@4e7dc304]" name="enterPersonalInfoHappyPath" duration-ms="821" started-at="2022-02-03T00:56:19 CET" data-provider="ubacivacImenaPrezimenaImaila" finished-at="2022-02-03T00:56:20 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lyndon Schinner III]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[raphael.cruickshank@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5966 Sebastian Meadow]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterPersonalInfoHappyPath -->
+        <test-method status="PASS" signature="enterPersonalInfoHappyPath(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.TestElements.TestTextBox@4e7dc304]" name="enterPersonalInfoHappyPath" duration-ms="843" started-at="2022-02-03T00:56:20 CET" data-provider="ubacivacImenaPrezimenaImaila" finished-at="2022-02-03T00:56:21 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mr. Eric Schmitt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[candy.nikolaus@yahoo.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8388 Mason Villages]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterPersonalInfoHappyPath -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.TestElements.TestTextBox@4e7dc304]" name="tearDown" is-config="true" duration-ms="663" started-at="2022-02-03T00:56:21 CET" finished-at="2022-02-03T00:56:22 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.TestElements.TestTextBox -->
+      <class name="Tests.TestElements.TestWebTables">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.TestElements.TestWebTables@64729b1e]" name="setUp" is-config="true" duration-ms="1134" started-at="2022-02-03T00:56:22 CET" finished-at="2022-02-03T00:56:23 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="enteringNewEmployeeHappyPath(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.TestElements.TestWebTables@64729b1e]" name="enteringNewEmployeeHappyPath" duration-ms="1973" started-at="2022-02-03T00:56:23 CET" data-provider="obezbedjivacImena" finished-at="2022-02-03T00:56:25 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rickie]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cummerata]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[richard.harber@hotmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[39]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[228168]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Assistant]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enteringNewEmployeeHappyPath -->
+        <test-method status="PASS" signature="enteringNewEmployeeHappyPath(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.TestElements.TestWebTables@64729b1e]" name="enteringNewEmployeeHappyPath" duration-ms="1340" started-at="2022-02-03T00:56:25 CET" data-provider="obezbedjivacImena" finished-at="2022-02-03T00:56:26 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lorelei]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pfannerstill]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[darrell.lakin@yahoo.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[28]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[121499]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Designer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enteringNewEmployeeHappyPath -->
+        <test-method status="PASS" signature="enteringNewEmployeeHappyPath(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.TestElements.TestWebTables@64729b1e]" name="enteringNewEmployeeHappyPath" duration-ms="1281" started-at="2022-02-03T00:56:26 CET" data-provider="obezbedjivacImena" finished-at="2022-02-03T00:56:28 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Noah]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bashirian]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[anjelica.gleichner@hotmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[47]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[246105]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Developer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enteringNewEmployeeHappyPath -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.TestElements.TestWebTables@64729b1e]" name="tearDown" is-config="true" duration-ms="704" started-at="2022-02-03T00:56:28 CET" finished-at="2022-02-03T00:56:28 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.TestElements.TestWebTables -->
+      <class name="Tests.TestElements.TestCheckbox">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.TestElements.TestCheckbox@2d6eabae]" name="setUp" is-config="true" duration-ms="1173" started-at="2022-02-03T00:56:12 CET" finished-at="2022-02-03T00:56:13 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="selectigAllBoxes()[pri:0, instance:Tests.TestElements.TestCheckbox@2d6eabae]" name="selectigAllBoxes" duration-ms="1025" started-at="2022-02-03T00:56:13 CET" finished-at="2022-02-03T00:56:14 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectigAllBoxes -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.TestElements.TestCheckbox@2d6eabae]" name="tearDown" is-config="true" duration-ms="627" started-at="2022-02-03T00:56:14 CET" finished-at="2022-02-03T00:56:15 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.TestElements.TestCheckbox -->
+    </test> <!-- Elements -->
+    <test name="Interactions" duration-ms="3895" started-at="2022-02-03T00:56:28 CET" finished-at="2022-02-03T00:56:32 CET">
+      <class name="Tests.TestInteractions.TestDrag">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.TestInteractions.TestDrag@305fd85d]" name="setUp" is-config="true" duration-ms="1168" started-at="2022-02-03T00:56:28 CET" finished-at="2022-02-03T00:56:29 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="dragAndDropElement()[pri:0, instance:Tests.TestInteractions.TestDrag@305fd85d]" name="dragAndDropElement" duration-ms="2041" started-at="2022-02-03T00:56:29 CET" finished-at="2022-02-03T00:56:31 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDropElement -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.TestInteractions.TestDrag@305fd85d]" name="tearDown" is-config="true" duration-ms="684" started-at="2022-02-03T00:56:31 CET" finished-at="2022-02-03T00:56:32 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.TestInteractions.TestDrag -->
+    </test> <!-- Interactions -->
+  </suite> <!-- Suite1 -->
+</testng-results>
