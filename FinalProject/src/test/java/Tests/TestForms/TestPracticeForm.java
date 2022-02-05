@@ -19,7 +19,8 @@ public class TestPracticeForm extends TestSetup {
      * <p>
      * 1.open the link https://demoqa.com/automation-practice-form
      * 2.enter the parameters in the required fields
-     * 3.click on the submit button and check if the message displayed matches the one in the required field of the assertion;
+     * 3.click on the submit button
+     * 4.assert that the message displayed is equal to the one expected
      */
 
 

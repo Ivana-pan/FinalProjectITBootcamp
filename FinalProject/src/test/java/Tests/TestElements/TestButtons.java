@@ -12,11 +12,21 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
 public class TestButtons extends TestSetup {
+    /**
+     * Test case clicking on the clickable elements of a webpage:
+     * 1.open the webpage assigned before methods - https://demoqa.com/buttons
+     * 2.click on each element on the directed way, which is written on the element itself
+     * (elements are buttons: one for a right-click, one for a double click and the third one for a left click)
+     * 3.assert that the valid messages are displayed below the elements
+     */
 
+    @BeforeMethod
+    public void openThePage() {
+        driver.get("https://demoqa.com/buttons");
+    }
 
     @Test
     public void kliktalicaDupla() {
-        driver.get("https://demoqa.com/buttons");
         ButtonsPOM dugmad = new ButtonsPOM(driver);
         dugmad.dupliKlik();
         String porukaDuplogKlika = driver.findElement(By.id("doubleClickMessage")).getText();
@@ -26,7 +36,6 @@ public class TestButtons extends TestSetup {
 
     @Test
     public void kliktalicaDesna() {
-        driver.get("https://demoqa.com/buttons");
         ButtonsPOM dugmad = new ButtonsPOM(driver);
         dugmad.desniKlik();
         String porukaDesnogKlika = driver.findElement(By.id("rightClickMessage")).getText();
@@ -36,7 +45,6 @@ public class TestButtons extends TestSetup {
 
     @Test
     public void kliktalicaLeva() {
-        driver.get("https://demoqa.com/buttons");
         ButtonsPOM dugmad = new ButtonsPOM(driver);
         dugmad.leviKlik();
         String porukaDesnogKlika = driver.findElement(By.id("dynamicClickMessage")).getText();

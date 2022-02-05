@@ -13,7 +13,7 @@ import java.security.Key;
 import java.util.List;
 
 public class FormsPOM extends PageObject {
-    /**
+    /**Methods used are
      *
      */
 
@@ -64,7 +64,7 @@ public class FormsPOM extends PageObject {
     List<WebElement> hobbies;
 
     @FindBy(id = "uploadPicture")
-    WebElement uploadPictureButton; //send Keys - src/main/java/Pic
+    WebElement uploadPictureButton;
 
     @FindBy(id = "currentAddress")
     WebElement address;
@@ -124,38 +124,38 @@ public class FormsPOM extends PageObject {
 
     public void addSubjects(String subject) {
 
-        for (WebElement sub : subjects){
-            if (subject.equals(sub.getText())){
+        for (WebElement sub : subjects) {
+            if (subject.equals(sub.getText())) {
                 sub.click();
             }
         }
     }
 
-    public void selectHobbies(String hobby){
-        for (WebElement we : hobbies){
-            if (we.getText().equals(hobby)){
+    public void selectHobbies(String hobby) {
+        for (WebElement we : hobbies) {
+            if (we.getText().equals(hobby)) {
                 we.click();
             }
         }
     }
 
-    public void submitAPhoto(){
+    public void submitAPhoto() {
         //uploadPictureButton.click();
         uploadPictureButton.sendKeys("D:\\QA\\Java Final Project\\FinalProject\\src\\main\\java\\Pic\\del.jpg");
     }
 
-    public void addCurrentAddress(String adr){
+    public void addCurrentAddress(String adr) {
         address.sendKeys(adr);
     }
 
-    public void addStateAndCity(){
+    public void addStateAndCity() {
         selectState.click();
         selectState.sendKeys("Haryana");
         //city.click();
         city.sendKeys("Karnal");
     }
 
-    public void submit(){
+    public void submit() {
         JavascriptExecutor scroll = (JavascriptExecutor) driver;
         scroll.executeScript("arguments[0].scrollIntoView();", submitButton);
         submitButton.click();

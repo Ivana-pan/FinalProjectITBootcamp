@@ -7,29 +7,12 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.assertFalse;
-import static org.testng.Assert.assertTrue;
+import java.util.Arrays;
 
+import static org.testng.Assert.*;
+
+//add unhappy path, verify only one checked/one unchecked, more checked, more unchecked boxes
 public class TestCheckbox extends TestSetup {
-
-    @Test
-    public void selectigAllBoxes() {
-        driver.get("https://demoqa.com/checkbox");
-        CheckboxPOM boxes = new CheckboxPOM(driver);
-        boxes.selectAllBoxes();
-
-        String centralPage = driver.findElement(By.id("result")).getText();
-        assertTrue(centralPage.contains("You have selected :"+"home" +"desktop" +"notes" +"commands"+"documents" +
-                "workspace" +"react" +"angular" +"veu\n" +
-                "office\n" +
-                "public\n" +
-                "private\n" +
-                "classified\n" +
-                "general\n" +
-                "downloads\n" +
-                "wordFile\n" +
-                "excelFile"), "Not all boxes are selected.");
-    }
 
     @Test
     public void allBoxesAreSelected(){
@@ -40,4 +23,11 @@ public class TestCheckbox extends TestSetup {
         assertTrue(boxes.getUncheckedBoxes().isEmpty(),"Boxes are checked");
     }
 
+    @Test
+    public void listOfAllTheEmptyBoxes(){
+        driver.get("https://demoqa.com/checkbox");
+        CheckboxPOM boxes = new CheckboxPOM(driver);
+        int[] actualNiz = boxes.selectingOnlyCertainBoxes(3);
+        Assert.assertEquals(actualNiz,new int[]{14,1,2},"Nizovi nisu jednaki");
+    }
 }

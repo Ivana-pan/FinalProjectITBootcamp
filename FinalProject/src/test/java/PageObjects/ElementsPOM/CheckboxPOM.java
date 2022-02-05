@@ -25,6 +25,9 @@ public class CheckboxPOM extends PageObject {
     @FindBy(className = "rct-icon-check")
     List<WebElement> checkedBoxes;
 
+    @FindBy(className = "rct-icon-half-check")
+    List<WebElement> halfCheckedBoxes;
+
     public List<WebElement> getCheckedBoxes() {
         return checkedBoxes;
     }
@@ -33,9 +36,43 @@ public class CheckboxPOM extends PageObject {
         return uncheckedBoxes;
     }
 
+    public List<WebElement> getHalfCheckedBoxes() {
+        return halfCheckedBoxes;
+    }
+
     public void selectAllBoxes() {
         selectAll.click();
         expandButton.click();
+    }
+    //-----------------one by one arrow selection
+
+    public int[] selectingOnlyCertainBoxes(int numberOfTheFileDesired) {
+        expandButton.click();
+        //System.out.println(uncheckedBoxes.size());
+        for (int i = 0; i < uncheckedBoxes.size(); i++) {
+            uncheckedBoxes.get(numberOfTheFileDesired).click();
+            break;
+        }
+        switch (numberOfTheFileDesired) {
+            case 2:
+            case 3:
+            case 15:
+            case 16:
+                //14e,1s,2h
+                return new int[]{uncheckedBoxes.size(), checkedBoxes.size(), halfCheckedBoxes.size()};
+            case 6:
+            case 7:
+            case 8:
+            case 10:
+            case 11:
+            case 12:
+            case 13:
+                //13e ,1s, 3h
+                return new int[]{uncheckedBoxes.size(), checkedBoxes.size(), halfCheckedBoxes.size()};
+
+        }
+
+        return new int[0];
     }
 
 
