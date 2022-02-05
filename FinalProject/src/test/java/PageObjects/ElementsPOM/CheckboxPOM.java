@@ -46,7 +46,7 @@ public class CheckboxPOM extends PageObject {
     }
     //-----------------one by one arrow selection
 
-    public int[] selectingOnlyCertainBoxes(int numberOfTheFileDesired) {
+    public int[] selectingOnlyCertainBox(int numberOfTheFileDesired) {
         expandButton.click();
         //System.out.println(uncheckedBoxes.size());
         for (int i = 0; i < uncheckedBoxes.size(); i++) {
@@ -59,7 +59,7 @@ public class CheckboxPOM extends PageObject {
             case 15:
             case 16:
                 //14e,1s,2h
-                return new int[]{uncheckedBoxes.size(), checkedBoxes.size(), halfCheckedBoxes.size()};
+                return new int[]{checkedBoxes.size(), halfCheckedBoxes.size(), uncheckedBoxes.size()};
             case 6:
             case 7:
             case 8:
@@ -68,10 +68,37 @@ public class CheckboxPOM extends PageObject {
             case 12:
             case 13:
                 //13e ,1s, 3h
+                return new int[]{checkedBoxes.size(), halfCheckedBoxes.size(), uncheckedBoxes.size()};
+        }
+        return new int[0];
+    }
+
+    public int[] selectingOnlyCertainBoxTypeFolder(int numberOfTheFileDesired) {
+        expandButton.click();
+        //System.out.println(uncheckedBoxes.size());
+        for (int i = 0; i < uncheckedBoxes.size(); i++) {
+            uncheckedBoxes.get(numberOfTheFileDesired).click();
+            break;
+        }
+        switch (numberOfTheFileDesired) {
+            case 1:
+                //13,3,1
+                return new int[]{uncheckedBoxes.size(), checkedBoxes.size(), halfCheckedBoxes.size()};
+            case 4:
+                //6,10,1
+                return new int[]{uncheckedBoxes.size(), checkedBoxes.size(), halfCheckedBoxes.size()};
+            case 5:
+                //11,4,2
+                return new int[]{uncheckedBoxes.size(), checkedBoxes.size(), halfCheckedBoxes.size()};
+            case 9:
+                //10,5,2
+                return new int[]{uncheckedBoxes.size(), checkedBoxes.size(), halfCheckedBoxes.size()};
+            case 14:
+                //13,3,1
                 return new int[]{uncheckedBoxes.size(), checkedBoxes.size(), halfCheckedBoxes.size()};
 
-        }
 
+        }
         return new int[0];
     }
 
