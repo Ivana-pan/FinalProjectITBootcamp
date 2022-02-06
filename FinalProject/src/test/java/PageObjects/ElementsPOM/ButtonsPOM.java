@@ -7,8 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
-import static org.testng.Assert.assertTrue;
-
 public class ButtonsPOM extends PageObject {
 
     public ButtonsPOM(WebDriver driver) {

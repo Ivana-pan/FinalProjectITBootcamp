@@ -3,12 +3,18 @@ package Tests.TestElements;
 import PageObjects.ElementsPOM.CheckboxPOM;
 import Setup.TestSetup;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import java.util.Arrays;
 import static org.testng.Assert.*;
 
 //add unhappy path, verify only one checked/one unchecked, more checked, more unchecked boxes
 public class TestCheckbox extends TestSetup {
+
+    @BeforeMethod
+    public void openThePage() {
+        driver.get("https://demoqa.com/checkbox");
+    }
 
     /**
      * Test case allBoxesAreSelected
@@ -21,7 +27,6 @@ public class TestCheckbox extends TestSetup {
 
     @Test
     public void allBoxesAreSelected() throws InterruptedException {
-        driver.get("https://demoqa.com/checkbox");
         CheckboxPOM boxes = new CheckboxPOM(driver);
         assertFalse(boxes.getUncheckedBoxes().isEmpty(), "Boxes are not empty a.k.a. not checked.");
         boxes.selectAllBoxes();
@@ -42,7 +47,6 @@ public class TestCheckbox extends TestSetup {
 
     @Test
     public void selectingOneBoxWhichIsATypeFile() {
-        driver.get("https://demoqa.com/checkbox");
         CheckboxPOM boxes = new CheckboxPOM(driver);
         //options for selecting a file: 2, 3, 6, 7, 8, 10, 11, 12, 13, 15, 16
         int[] actualNiz = boxes.selectingOnlyCertainBox(2);
@@ -60,7 +64,6 @@ public class TestCheckbox extends TestSetup {
 
     @Test
     public void selectingOneBoxWhichIsATypeFolder() {
-        driver.get("https://demoqa.com/checkbox");
         CheckboxPOM boxes = new CheckboxPOM(driver);
         //options for selecting a folder: 1, 4, 5, 9, 14
         int numberOfAFile = 14;

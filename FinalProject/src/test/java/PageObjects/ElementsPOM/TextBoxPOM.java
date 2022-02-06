@@ -3,7 +3,10 @@ package PageObjects.ElementsPOM;
 import Setup.PageObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.FindBy;
+
+
 
 public class TextBoxPOM extends PageObject {
 
@@ -16,7 +19,7 @@ public class TextBoxPOM extends PageObject {
     WebElement userNameAndLastname;
 
     @FindBy(id = "userEmail")
-    public WebElement email;
+    WebElement email;
 
     @FindBy(id = "currentAddress")
     WebElement address;
@@ -35,4 +38,12 @@ public class TextBoxPOM extends PageObject {
         permanentAddress.sendKeys(permAddress);
         submitButton.click();
     }
+
+    public String colorOfTheEmailWrongEntry(){
+        String errorBoxBorder = email.getCssValue("border-color");
+        String hex = Color.fromString(errorBoxBorder).asHex();
+        System.out.println(hex);
+        return hex;
+    }
+
 }
