@@ -40,7 +40,7 @@ public class TextBoxPOM extends PageObject {
     }
 
     public String colorOfTheEmailWrongEntry(){
-        String errorBoxBorder = email.getCssValue("border-color");
+        String errorBoxBorder = email.getCssValue("border-bottom-color");
         String hex = Color.fromString(errorBoxBorder).asHex();
         System.out.println(hex);
         return hex;

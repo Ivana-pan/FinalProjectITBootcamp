@@ -73,14 +73,14 @@ public class CheckboxPOM extends PageObject {
         return new int[0];
     }
 
-    public int[] selectingOnlyCertainBoxTypeFolder(int numberOfTheFileDesired) {
+    public int[] selectingOnlyCertainBoxTypeFolder(int numberOfTheFolderDesired) {
         expandButton.click();
         //System.out.println(uncheckedBoxes.size());
         for (int i = 0; i < uncheckedBoxes.size(); i++) {
-            uncheckedBoxes.get(numberOfTheFileDesired).click();
+            uncheckedBoxes.get(numberOfTheFolderDesired).click();
             break;
         }
-        switch (numberOfTheFileDesired) {
+        switch (numberOfTheFolderDesired) {
             case 1:
                 //13,3,1
                 return new int[]{uncheckedBoxes.size(), checkedBoxes.size(), halfCheckedBoxes.size()};

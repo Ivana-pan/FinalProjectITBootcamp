@@ -47,7 +47,6 @@ public class TestCheckbox extends TestSetup {
 
     @Test
     public void selectingOneBoxWhichIsATypeFile() {
-        CheckboxPOM boxes = new CheckboxPOM(driver);
         //options for selecting a file: 2, 3, 6, 7, 8, 10, 11, 12, 13, 15, 16
         int[] actualNiz = boxes.selectingOnlyCertainBox(2);
         Assert.assertTrue(Arrays.equals(actualNiz, new int[]{1, 2, 14}) || Arrays.equals(actualNiz, new int[]{1, 3, 13}), "Selected fiels are not files");
@@ -64,25 +63,22 @@ public class TestCheckbox extends TestSetup {
 
     @Test
     public void selectingOneBoxWhichIsATypeFolder() {
-        CheckboxPOM boxes = new CheckboxPOM(driver);
         //options for selecting a folder: 1, 4, 5, 9, 14
-        int numberOfAFile = 14;
+        int numberOfAFile = 5; // can be changed
         int[] actualNiz = boxes.selectingOnlyCertainBoxTypeFolder(numberOfAFile);
         switch (numberOfAFile) {
             case 1:
-                assertTrue(Arrays.equals(actualNiz, new int[]{13, 3, 1}), "Paramater is not 1");
+            case 14:
+                assertTrue(Arrays.equals(actualNiz, new int[]{13, 3, 1}), "Parameter is not 1");
                 break;
             case 4:
-                assertTrue(Arrays.equals(actualNiz, new int[]{6, 10, 1}), "Paramater is not 4");
+                assertTrue(Arrays.equals(actualNiz, new int[]{6, 10, 1}), "Parameter is not 4");
                 break;
             case 5:
-                assertTrue(Arrays.equals(actualNiz, new int[]{11, 4, 2}), "Paramater is not 1");
+                assertTrue(Arrays.equals(actualNiz, new int[]{11, 4, 2}), "Parameter is not 1");
                 break;
             case 9:
-                assertTrue(Arrays.equals(actualNiz, new int[]{10, 5, 2}), "Paramater is not 1");
-                break;
-            case 14:
-                assertTrue(Arrays.equals(actualNiz, new int[]{13, 3, 1}), "Paramater is not 1");
+                assertTrue(Arrays.equals(actualNiz, new int[]{10, 5, 2}), "Parameter is not 1");
                 break;
         }
 

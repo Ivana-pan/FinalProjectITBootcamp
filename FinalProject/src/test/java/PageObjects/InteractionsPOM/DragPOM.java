@@ -12,9 +12,12 @@ public class DragPOM extends PageObject {
         super(driver);
     }
 
-    @FindBy(xpath = "//*[@id=\"dragBox\"]")
+    @FindBy(id = "dragBox")
     WebElement dropBox;
 
+    public WebElement getDropBox() {
+        return dropBox;
+    }
 
     public void dragAndDropMethod(int xPixel, int yPixel) {
         Actions dragger = new Actions(driver);

@@ -3,13 +3,17 @@ package Tests.TestForms;
 import PageObjects.FormsPOM.FormsPOM;
 import Setup.TestSetup;
 import com.github.javafaker.Faker;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import static org.testng.AssertJUnit.assertTrue;
 
 public class TestPracticeForm extends TestSetup {
 
-    Faker faker;
+    @BeforeClass
+    public void openingThePage(){
+        driver.get("https://demoqa.com/automation-practice-form");
+    }
 
     /**
      * Test case: entering required data to successfully submit a form;
@@ -23,19 +27,14 @@ public class TestPracticeForm extends TestSetup {
      * 4.assert that the message displayed is equal to the one expected
      */
 
-
     @Test
     public void fillingOutFormHappyPath() throws InterruptedException {
 
-        driver.get("https://demoqa.com/automation-practice-form");
-        FormsPOM person = new FormsPOM(driver);
-
-        faker = new Faker();
         person.enterNameandMail(faker.name().firstName(), faker.name().lastName(), faker.internet().emailAddress());
         person.selectingGender("Female");
         person.addingPhoneNo("0987560398");
         person.addDateOfBirth("3", "1988");
-        person.dayOfBirth("31");
+        person.dayOfBirth("28");
         person.addSubjects("E");
         person.selectHobbies("Music");
         person.submitAPhoto();
