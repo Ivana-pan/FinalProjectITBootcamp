@@ -35,7 +35,7 @@ public class TestDrag extends TestSetup {
         System.out.println(xAxis);
         int yAxis = box.getY();
         System.out.println(yAxis);
-        
+
     }
 
 }

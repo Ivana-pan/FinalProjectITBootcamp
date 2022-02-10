@@ -27,7 +27,6 @@ public class TestCheckbox extends TestSetup {
 
     @Test
     public void allBoxesAreSelected() throws InterruptedException {
-        CheckboxPOM boxes = new CheckboxPOM(driver);
         assertFalse(boxes.getUncheckedBoxes().isEmpty(), "Boxes are not empty a.k.a. not checked.");
         boxes.selectAllBoxes();
         assertTrue(boxes.getUncheckedBoxes().isEmpty(), "Boxes are checked");

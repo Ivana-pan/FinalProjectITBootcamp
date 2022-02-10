@@ -46,6 +46,11 @@ public class CheckboxPOM extends PageObject {
     }
     //-----------------one by one arrow selection
 
+    /**
+     *
+     * @param numberOfTheFileDesired
+     * @return
+     */
     public int[] selectingOnlyCertainBox(int numberOfTheFileDesired) {
         expandButton.click();
         //System.out.println(uncheckedBoxes.size());
@@ -73,6 +78,11 @@ public class CheckboxPOM extends PageObject {
         return new int[0];
     }
 
+    /**
+     *
+     * @param numberOfTheFolderDesired
+     * @return
+     */
     public int[] selectingOnlyCertainBoxTypeFolder(int numberOfTheFolderDesired) {
         expandButton.click();
         //System.out.println(uncheckedBoxes.size());

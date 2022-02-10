@@ -58,7 +58,8 @@ public class TestTextBox extends TestSetup {
         personalData.enteringData(imePrezime, mail, adresa, adresa);
 
         String unos = driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div[2]/div[1]/form/div[6]/div")).getText();
-        assertTrue(unos.contains(imePrezime) && unos.contains(mail) && unos.contains(adresa), "Test failed");
+        //move to page object
+        assertTrue(unos.contains(imePrezime) && unos.contains(mail) && unos.contains(adresa), "Test failed,"); //
     }
 
     /**

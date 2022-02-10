@@ -43,7 +43,6 @@ public class TestSetup {
 
     }
 
-
     @AfterClass
     public static void tearDown() {
         driver.close();
